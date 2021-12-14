@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Pricing-Tables11</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="reponsive.css">
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&family=Source+Sans+Pro:wght@200;300&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&family=Source+Sans+Pro:wght@200;300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,300;0,600;1,400&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container header_inner">
+            <div class="container1 header_inner">
                 <div class="header_logo">
                     <img src="image/logo1.png" alt="Ảnh logo" class="logo">
-                    <a href="index.html" class="logo_title">THEGEM
-                    </a>
+                    <a href="index.html" class="logo_title">THEGEM</a>
                 </div>
-                <nav class="header_menu">
-                    <ul class="header_menu-list">
+                <!---menu-->
+                <nav class="header_menu flex_row1">
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="header_menu-list mainMenu">
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link">HOME</a>
                         </li>
-
-
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link" style="color: #FFF;">PAGES</a>
                         </li>
-
-
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link">BLOG</a>
                         </li>
-
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link ">PORTFOLIOS</a>
                         </li>
-
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link ">SHOP</a>
                         </li>
@@ -68,34 +54,35 @@
                         <li class="header_menu-item">
                             <a href="#" class="header_menu-link ">ELEMENT</a>
                         </li>
-
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
                     </ul>
-
                 </nav>
                 <div class="header_infor">
-                    <div class="language">
-                        <img src="image/flag.png">
-                    </div>
-                    <div class="search">
-                        <span class="material-icons-outlined" style="color: #99a9b5;">
-                            search
-                        </span>
-
-                    </div>
-                    <div class="cart">
-                        <span class="material-icons-two-tone" style="color: #99a9b5;font-weight: 600;">
-                            shopping_basket
-                        </span>
-                        <p class="product">2</p>
-                    </div>
-
+                    <ul>
+                        <li>
+                            <div class="language">
+                                <img src="image/flag.png">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search">
+                                <span class="material-icons-outlined" style="color: #99a9b5;">
+                                search
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart">
+                                <i class="material-icons cart_icon">
+                                shopping_basket
+                            </i>
+                                <span class="product">2</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-
             </div>
-
         </header>
-
         <section class="banner">
             <div class="banner_container">
                 <div class="image_banner">
@@ -104,28 +91,22 @@
                 <div class="banner_title">
                     <h1>PRICING <span>TABLES</span></h1>
                 </div>
-
                 <div class="banner_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                 </div>
                 <div class="banner__buttons">
-                    <a href="#" class="btn1 btn1--border btn1--rounded"
-                        style=" border: 1px solid #fff;letter-spacing: 2px;">PURCHASE NOW</a>
+                    <a href="#" class="btn1 btn1--border btn1--rounded" style=" border: 1px solid #fff;letter-spacing: 2px;">PURCHASE NOW</a>
                     <a href="#" class="btn1 btn1--primary btn1--rounded has-shadow">MORE DETAILS</a>
                 </div>
                 <div class="circle">
                     <i class="far fa-dot-circle circle1"></i>
                     <i class="far fa-circle circle2"></i>
                     <i class="far fa-circle"></i>
-
                 </div>
                 <div class="arrow">
                     <div class="arrow_left">
                         <i class="fas fa-arrow-left"></i>
                     </div>
-
                     <div class="arrow_right">
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -133,159 +114,138 @@
             </div>
         </section>
         <section class="content">
-            <div class=" container item">
+            <div class=" container1 item">
                 <h2>LOREM <span>IPSUM</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquam quaerat voluptatem. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                    aut odit aut fugit</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
             </div>
         </section>
-
         <section class="table">
+            <div class="container1 table_container">
+                <div class="table_item  table-item--1">
 
-            <div class="container">
-                <ul class="pricing_table">
-                    <li>
-                        <div class="title">
-                            <h4>Lorem Ipsum</h4>
-                            <p>Subtitle second line goes here</p>
+                    <div class="title">
+                        <h4>Lorem Ipsum</h4>
+                        <p>Subtitle second line goes here</p>
+                    </div>
+                    <div class="price_body">
+                        <div class="price">
+                            <span class="price_figure">$99</span>
+                            <span class="price_term">per month</span>
                         </div>
-                        <div class="price_body">
-                            <div class="price">
-                                <span class="price_figure">$99</span>
-                                <span class="price_term">per month</span>
-                            </div>
+                    </div>
+                    <div class="basic">
+                        <h4>BASIC</h4>
+                        <hr>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>Photo sharing school</li>
+                            <li>Drop out ramen hustle</li>
+                            <li>Coworking viral landing</li>
+                            <li><del>Crush revenue traction</del></li>
+                            <li><del>User base minimum viable</del></li>
+                            <li><del>Lorem ipsum dolor</del></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <a href="#" class="action_button">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="table_item table-item--2 table-item-new">
+                    <div class="title">
+                        <h4>Lorem Ipsum</h4>
+                        <p>Subtitle second line goes here</p>
+                    </div>
+                    <div class="price_body">
+                        <div class="price">
+                            <span class="price_figure">$199</span>
+                            <span class="price_term">per month</span>
                         </div>
-                        <div class="basic">
-                            <h4>BASIC</h4>
-                            <hr>
+                    </div>
+                    <div class="basic">
+                        <h4>BASIC</h4>
+                        <hr>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>Photo sharing school</li>
+                            <li>Drop out ramen hustle</li>
+                            <li>Coworking viral landing</li>
+                            <li>Crush revenue traction </li>
+                            <li><del>User base minimum viable</del></li>
+                            <li><del>Lorem ipsum dolor</del></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <a href="#" class="action_button">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="table_item table_item1-item--3 active">
+                    <div class="title">
+                        <h4>Lorem Ipsum</h4>
+                        <p> Subtitle second line goes here</p>
+                    </div>
+                    <div class="price_body">
+                        <div class="price">
+                            <span class="price_figure">$299</span>
+                            <span class="price_term">per month</span>
                         </div>
-                        <div class="features">
-                            <ul>
-                                <li>Photo sharing school</li>
-                                <li>Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li><del>Crush revenue traction</del></li>
-                                <li><del>User base minimum viable</del></li>
-                                <li><del>Lorem ipsum dolor</del></li>
-                            </ul>
-                        </div>
-                        <div class="footer">
-                            <a href="#" class="action_button">ORDER NOW</a>
-                        </div>
-                    </li>
+                    </div>
+                    <div class="basic">
+                        <h4>ULTIMATE</h4>
+                        <p class="active_title">The best price/quantity plan *</p>
+                        <hr>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>Photo sharing school</li>
+                            <li>Drop out ramen hustle</li>
+                            <li>Coworking viral landing</li>
+                            <li>Crush revenue traction </li>
+                            <li>User base minimum viable</li>
+                            <li><del>Lorem ipsum dolor</del></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <a href="#" class="action_button">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="table_item table_item1-item--4">
 
-                    <li class="table2">
-                        <div class="title">
-                            <h4>Lorem Ipsum</h4>
-                            <p>Subtitle second line goes here</p>
+                    <div class="title">
+                        <h4>Lorem Ipsum</h4>
+                        <p>Subtitle second line goes here</p>
+                    </div>
+                    <div class="price_body">
+                        <div class="price">
+                            <span class="price_figure">$399</span>
+                            <span class="price_term">per month</span>
                         </div>
-                        <div class="price_body">
-                            <div class="price">
-                                <span class="price_figure">$199</span>
-                                <span class="price_term">per month</span>
-                            </div>
-                        </div>
-                        <div class="basic">
-                            <h4>STANDARD</h4>
-                            <hr>
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Photo sharing school</li>
-                                <li>Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li><del>Crush revenue traction</del></li>
-                                <li><del>User base minimum viable</del></li>
-                                <li><del>Lorem ipsum dolor</del></li>
-
-                            </ul>
-
-                        </div>
-                        <div class="footer">
-                            <a href="#" class="action_button">ORDER NOW</a>
-                        </div>
-                    </li>
-                    <!-- Active/Hover styles -->
-                    <li class="active">
-                        <div class="title " style="padding-top: 27px;padding-bottom: 0px;">
-                            <h4>Subtitle goes header</h4>
-                            <p>Subtitle second line goes here *</p>
-                        </div>
-                        <div class="price_body1">
-                            <div class="price">
-                                <span class="price_figure">$299</span>
-                                <span class="price_term">per month</span>
-                            </div>
-                        </div>
-                        <div class="basic">
-                            <h4>ULTIMATE</h4>
-                            <p>The best price/quantity plan *</p>
-                            <hr>
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Photo sharing school</li>
-                                <li>Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li><del>Crush revenue traction</del></li>
-                                <li><del>User base minimum viable</del></li>
-                                <li><del>Lorem ipsum dolor</del></li>
-                            </ul>
-                        </div>
-                        <div class="footer">
-                            <a href="#" class="action_button">ORDER NOW</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title">
-                            <h4>Lorem Ipsum</h4>
-                            <p>Subtitle second line goes here</p>
-                        </div>
-                        <div class="price_body">
-                            <div class="price">
-                                <span class="price_figure">$399</span>
-                                <span class="price_term">per month</span>
-                            </div>
-                        </div>
-                        <div class="basic">
-                            <h4>PREMIUM</h4>
-                            <hr>
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Photo sharing school</li>
-                                <li>Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li><del>Crush revenue traction</del></li>
-                                <li><del>User base minimum viable</del></li>
-                                <li><del>Lorem ipsum dolor</del></li>
-                            </ul>
-                        </div>
-                        <div class="footer">
-                            <a href="#" class="action_button">ORDER NOW</a>
-                        </div>
-                    </li>
-                    <!-- To prevent .pricing_table height collapse(as its children are floated) -->
-                    <div class="clr"></div>
-                </ul>
-
-
-
+                    </div>
+                    <div class="basic">
+                        <h4>BASIC</h4>
+                        <hr>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li>Photo sharing school</li>
+                            <li>Drop out ramen hustle</li>
+                            <li>Coworking viral landing</li>
+                            <li>Crush revenue traction </li>
+                            <li>User base minimum viable</li>
+                            <li>Lorem ipsum dolor </li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <a href="#" class="action_button">ORDER NOW</a>
+                    </div>
+                </div>
             </div>
-
-
         </section>
-
         <section class="block">
             <div class="banner_container">
                 <div class="image_block">
@@ -294,26 +254,17 @@
                 <div class="block_title">
                     <h2>AD BLOCK</h2>
                 </div>
-
                 <div class="block_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse eu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse eu</p>
                 </div>
                 <div class="banner__buttons">
-
                     <a href="#" class="btn1 btn1--primary btn1--rounded has-shadow">PURCHASE NOW</a>
                 </div>
             </div>
         </section>
-
-        <footer class="footer" >
-            <div class="footer_top">
-            <div class="container">
-               
-
-               
+        <section class="footer_top">
+            <div class="container1">
                 <ul class="footer_list">
                     <li class="footer_item">
                         <div class="top">
@@ -321,19 +272,17 @@
                                 <div class="footer_image">
                                     <img src="image/logo3.png">
                                 </div>
-
                                 <div class="footer_title">THE <span>GEM</span></div>
                             </div>
                             <div class="footer_content">
-                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                                    quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
-                                    sed odio sit amet nibh </p>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </p>
                             </div>
-
                         </div>
                         <div class="center">
                             <div class="center_content">
-                                <h4>CONTACT</h4>
+                                <div class="recent">
+                                    <h4>CONTACT</h4>
+                                </div>
                                 <div class="address">
                                     <ul class="address_list1">
                                         <li><i class="fas fa-map-marker-alt"></i> Address:</li>
@@ -341,37 +290,32 @@
                                         <li>#100,Washington,DC</li>
                                         <li>20037,United States</li>
                                     </ul>
-
                                 </div>
-
                                 <div class="phone">
                                     <ul class="phone_list1">
                                         <li><i class="fas fa-headphones"></i>Phone: +1 916-875-2235</li>
                                         <li><i class="far fa-file-alt"></i>Fax: +1 916-875-2235</li>
-                                        <li><a href=""><i
-                                                    class="far fa-envelope"></i>Email:<span>infor@domain.ltd</span> </a>
+                                        <li>
+                                            <a href="">
+                                                <i class="far fa-envelope">
+                                                    </i>Email:<span>infor@domain.ltd</span>
+                                            </a>
                                         </li>
                                         <li><a href=""><i class="fas fa-globe"></i>Website:
-                                                <span>www.codex-themes.com</span></a></li>
+                                                    <span>www.codex-themes.com</span></a></li>
                                     </ul>
                                 </div>
-
                             </div>
-
-
                         </div>
-
-
                     </li>
                     <li class="footer_item">
                         <div class="top">
-                            <div class="post">
+                            <div class="recent">
                                 <h4>RECENT POSTS</h4>
                             </div>
                             <div class="post_item">
                                 <div class="post_item1">
                                     <div class="footer_circle">
-
                                     </div>
                                     <div class="post_infor">
                                         <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
@@ -384,10 +328,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="post_item1 border_item">
                                     <div class="footer_circle  circle2">
-
                                     </div>
                                     <div class="post_infor">
                                         <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
@@ -400,11 +342,8 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="post_item1">
                                     <div class="footer_circle circle3">
-
                                     </div>
                                     <div class="post_infor">
                                         <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
@@ -417,127 +356,101 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-
                         <div class="bottom">
-                            <h4>USEFUL LINKS</h4>
+                            <div class="recent">
+                                <h4>USEFUL LINKS</h4>
+                            </div>
                             <div class="link">
                                 <ul>
-                                    <li class="border1"><a href=""><i class="fas fa-circle"></i>General Information For Users</a></li>
-                                    <li class="border2"><a href=""><i class="fas fa-circle"></i>Interactive Fairy Tales</a></li>
-                                    <li class="border3"><a href=""><span><i class="fas fa-circle"></i>Official Storybook Maker Website</span></a></li>
-                                    <li class="border4"><a href=""><i class="fas fa-circle"></i>Everyday Mathematics Links</a></li>
-                                    <li class="border5"><a href=""><i class="fas fa-circle"></i>Basic Knowledge and Experience</a></li>
+                                    <li class="border1"><a href=""><i class="fas fa-circle"></i>General Information
+                                                For Users</a></li>
+                                    <li class="border2"><a href=""><i class="fas fa-circle"></i>Interactive Fairy
+                                                Tales</a></li>
+                                    <li class="border3"><a href=""><span><i class="fas fa-circle"></i>Official
+                                                    Storybook Maker Website</span></a></li>
+                                    <li class="border4"><a href=""><i class="fas fa-circle"></i>Everyday Mathematics
+                                                Links</a></li>
+                                    <li class="border5"><a href=""><i class="fas fa-circle"></i>Basic Knowledge and
+                                                Experience</a></li>
                                 </ul>
                             </div>
                         </div>
-
-
-
                     </li>
-
-
                     <li class="footer_item">
                         <div class="top">
-                        <div class="post">
-                            <h4>EMAIL US</h4>
+                            <div class="recent">
+                                <h4>EMAIL US</h4>
 
-                        </div>
-                        <div class="contact">
-                            <input type="text" placeholder="Your name">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="contact">
-                            <input type="email" placeholder="Your email">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <div class="contact">
-                            <textarea rows="3" cols="30">
+                            </div>
+                            <div class="contact contact-1">
+                                <input type="text" placeholder="Your name">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact">
+                                <input type="email" placeholder="your@email.addres">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="contact">
+                                <textarea rows="3" cols="30">Your mesage
 
                              </textarea>
+                            </div>
+                            <div class="contact">
+                                <button type="submit" value="SEND MESSAGE" class="button">SEND MESSAGE</button>
+                            </div>
                         </div>
-                        <div class="contact">
-                            <button type="submit" value="SEND MESSAGE" class="button">SEND MESSAGE</button>
-                        </div>
-                        </div>
-
                         <div class="bottom3">
-                            <div class="client">
+                            <div class="client recent">
                                 <h4>PROJECTS / CLIENTS ?</h4>
                             </div>
                             <ul class="feed_list">
                                 <li class="feed_item feed_item1">
-    
                                 </li>
                                 <li class="feed_item feed_item2">
-    
                                 </li>
                                 <li class="feed_item feed_item4">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item2">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item4">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item1">
-    
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="footer_item">
                         <div class="top4">
-                            <div class="post">
+                            <div class="recent">
                                 <h4>FLICKR FEED</h4>
-    
                             </div>
                             <ul class="feed_list">
                                 <li class="feed_item feed_item1">
-    
                                 </li>
                                 <li class="feed_item feed_item2">
-    
                                 </li>
                                 <li class="feed_item feed_item3">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item2">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item4">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item1">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item4">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item3">
-    
                                 </li>
-    
                                 <li class="feed_item feed_item2">
-    
                                 </li>
                             </ul>
                         </div>
-                      
                         <div class="bottom4">
-                            <h4>NEWSLETTER</h4>
+                            <div class="recent">
+                                <h4>NEWSLETTER</h4>
+                            </div>
                             <div class="registration">
                                 <p>Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:<span>Lorem Ipsum</span></p>
                                 <div class="email_address">
@@ -547,20 +460,14 @@
                                 <p class="personal"><span>*</span>Personal information will be encrypted</p>
                             </div>
                         </div>
-                        
                     </li>
-
-
                 </ul>
-               </div>
-
-             
-
             </div>
+        </section>
+        <footer class="footer">
             <div class="footer_bottom">
-                <div class="container footer_inner">
+                <div class="container1 footer_inner">
                     <div class="footer_source">
-                        
                         <p>@Copyright 2015<span>CodexThemes</span></p>
                     </div>
                     <nav class="footer_menu">
@@ -577,23 +484,21 @@
                             <li class="footer_menu-item">
                                 <a href="#" class="footer_menu-link ">Privacy Policy</a>
                             </li>
-    
                         </ul>
-    
                     </nav>
                     <div class="footer_infor">
-                        <i class="fab fa-twitter twitt" ></i>
-                        <i class="fab fa-facebook-f face" ></i>
-                        <i class="fab fa-linkedin-in linkedin" ></i>
-                        <i class="fab fa-instagram instar" ></i>
-                        <i class="fab fa-google-plus-g google" ></i>
-                        <i class="fab fa-youtube youtube" ></i>
+                        <i class="fab fa-twitter twitt"></i>
+                        <i class="fab fa-facebook-f face"></i>
+                        <i class="fab fa-linkedin-in linkedin"></i>
+                        <i class="fab fa-instagram instar"></i>
+                        <i class="fab fa-google-plus-g google"></i>
+                        <i class="fab fa-youtube youtube"></i>
                     </div>
-    
                 </div>
             </div>
         </footer>
     </div>
+    <script src="style/main.js"></script>
 </body>
 
 </html>
