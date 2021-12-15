@@ -1,4 +1,4 @@
-@media (max-width: 1160px) {
+@media only screen and (max-width: 1160px) {
     .wrapper {
         padding-left: 10px;
         padding-right: 10px;
@@ -36,6 +36,7 @@
     }
     .footer_top {
         padding-left: 34px;
+        padding-right: 34px;
     }
     .center_content {
         padding-bottom: 30px;
@@ -44,11 +45,18 @@
         width: calc(50% - 30px);
     }
     .feed_item {
-        height: 100px;
+        margin-right: 10px;
+    }
+    .feed_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 
-@media(max-width:850px) {
+@media only screen and (max-width:850px) {
     .header {
         padding-bottom: 50px;
     }
@@ -91,8 +99,11 @@
     .active {
         margin-top: 3px;
     }
-    .footer_inner {
+    .footer .header_inner {
         flex-direction: column;
+    }
+    .footer_source {
+        margin-right: 0px;
     }
     .footer_menu-list {
         margin-left: 20px;
@@ -173,6 +184,9 @@
     }
     .banner__buttons .btn1 {
         margin: 20px;
+    }
+    .post_infor p {
+        word-spacing: 0px;
     }
     .footer_top {
         padding-right: 27px;
