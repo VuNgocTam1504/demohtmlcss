@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1160px) {
+@media(max-width: 1160px) {
     .wrapper {
         padding-left: 10px;
         padding-right: 10px;
@@ -54,9 +54,13 @@
         align-items: flex-start;
         flex-wrap: wrap;
     }
+     .footer_menu{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
-@media only screen and (max-width:850px) {
+@media(max-width:850px) {
     .header {
         padding-bottom: 50px;
     }
@@ -110,6 +114,10 @@
     }
     .footer_infor {
         margin-left: 0px;
+    }
+     .footer_menu{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -196,6 +204,8 @@
     }
     .footer_item {
         width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .footer_item .bottom .link {
         margin-bottom: 30px;
