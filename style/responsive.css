@@ -54,12 +54,11 @@
         align-items: flex-start;
         flex-wrap: wrap;
     }
-    .footer_menu{
+     .footer_menu{
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
-
 @media(max-width:850px) {
     .header {
         padding-bottom: 50px;
@@ -115,12 +114,11 @@
     .footer_infor {
         margin-left: 0px;
     }
-    .footer_menu{
+     .footer_menu{
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
-
 @media(max-width:500px) {
     .openMenu {
         display: block;
@@ -204,6 +202,8 @@
     }
     .footer_item {
         width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .footer_item .bottom .link {
         margin-bottom: 30px;
@@ -213,9 +213,5 @@
     }
     .footer_menu-item {
         padding: 0px 6px;
-    }
-    .footer_menu{
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 }
