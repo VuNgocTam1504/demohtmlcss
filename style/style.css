@@ -8,9 +8,6 @@ img {
 a {
     text-decoration: none;
 }
-.wrapper {
-    width: 100%;
-}
 .header {
     padding-top: 26px;
     padding-bottom: 160px;
@@ -266,16 +263,18 @@ a {
     flex-wrap: wrap;
     margin-bottom: 100px;
 }   
-.table_item {
+.table_item{
     width: calc(25% - 33.75px);
     background: #f0f3f2;
     border-radius: 50px;
     font-family: 'Source Sans Pro';
-    transition: all 0.5s ease-in-out;
+    height:700px;
+    transition: 0.5s ease;
 }
-.table_item:hover {
-    transform: scaleY(1.05);
+.table_item:hover{
+    margin-top: -20px;
     background-color: #393d50;
+    height: 730px;
 }
 .table_item:hover .action_button{
     color: #fff;
@@ -283,10 +282,10 @@ a {
 }
 .basic p{
     opacity: 0;
-}   
+}  
 .table_item:hover .basic p{
       opacity: 1;
-      color: #fff;
+    
 }
 .table_item:hover h4{
     color: #fff;
@@ -310,11 +309,10 @@ a {
     margin-bottom: 10px;
 }    
 .table_item .price_body {
-    width: 160px;
-    height: 160px;
+    padding: 45px 33px;
     margin: 0 auto 40px auto;
     border: 2px solid #fff;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #ffffff;
     display: table;
 }    
@@ -325,7 +323,7 @@ a {
 }   
 .price .price_figure {
     display: block;
-    font-size: 52px;
+    font-size: 46px;
     font-family: 'Source Sans Pro';
     font-weight: 300;
     line-height: 42px;
@@ -351,16 +349,19 @@ hr {
     margin-top: 18px;
 }   
 .features ul {
-    font-size: 13.5px;
+    font-size: 14.5px;
     text-align: center;
+    padding-top: 20px;
 }  
 .features ul li {
     list-style-type: none;
     line-height: 30px;
-    color: #8f9da5;
+    color: #a5b3bd;
+    font-weight: 600;
 }   
 .features li del {
-    color: #9faeb9;
+    color: #9cacb7;
+    font-weight: 500;
 }   
 .table_item .footer {
     margin: 20px 0px 70px 0px;
@@ -381,9 +382,8 @@ hr {
 }  
 .basic p{
     color: #a5b3bd;
-    font-weight: 400;
-    font-size: 12px;
-
+    font-weight: 500;
+    font-size: 14px;
     text-align: center;
     margin-top: 12px;
 }
@@ -395,12 +395,11 @@ hr {
     background-color: #f44336;
     color: #ffff;
     text-transform: uppercase;
-    width: 50px;
-    height: 50px;
+    padding: 0px 11px;
     line-height: 50px;
     border-radius: 50%;
-    text-align: center;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
     left: 30px;
     top: -24px;
 }   
