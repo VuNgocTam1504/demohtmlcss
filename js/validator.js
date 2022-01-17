@@ -1,71 +1,77 @@
-function Validator(options){
-    var selectorRules={}
+    let selectorRules={}
     function Validate(inputElement,rule){
-        var errorElement= inputElement.parentElement.querySelector('.form-message');
-        var errorMessage;
-        var rules= selectorRules[rule.selector];
-        for(var i=0; i<rules.length;i++){
-            errorMessage=rules[i](inputElement.value);
-            if(errorMessage) break;
+        let errorElement= inputElement.parentElement.querySelector('.form-message')
+        let errorMessage
+        //lấy ra các rules của selector
+        let rules= selectorRules[rule.selector]
+        //lặp qua từng rule và check.Nếu có lỗi thì dừng việc ktra
+        for(let i=0; i<rules.length;i++){
+            errorMessage=rules[i](inputElement.value)
+            if(errorMessage) break
         }
         if(errorMessage){
-            errorElement.innerText= errorMessage;
+            errorElement.innerText= errorMessage
             inputElement.parentElement.classList.add('invalid')
         }
         else{
-            errorElement.innerText= ' ';
+            errorElement.innerText= ' '
             inputElement.parentElement.classList.remove('invalid')
         }
-        return !errorMessage;
+        return !errorMessage
     }
-    var formElement = document.querySelector(options.form); 
+function Validator(options){
+    var formElement = document.querySelector(options.form) 
     if(formElement){
         formElement.onsubmit= function(e){
-            e.preventDefault();
-            var isFormValid=true;
+            e.preventDefault()
+            var isFormValid=true
             options.rules.forEach(function(rule){
-                var inputElement= formElement.querySelector(rule.selector);
-                var isValid=Validate(inputElement,rule);
+                var inputElement= formElement.querySelector(rule.selector)
+                var isValid=Validate(inputElement,rule)
                 if(!isValid){
-                    isFormValid=false;
+                    isFormValid=false
                 }          
-            });
+            })
             if(isFormValid){
                 if(typeof options.onsubmit === 'function'){
                     var enableInputs= formElement.querySelectorAll('[name]')
                     var formValues= Array.from(enableInputs).reduce(function(values,input){
-                        values[input.name]=input.value;
-                        return values;
-                    },{});
-                    options.onsubmit(formValues);
+                        values[input.name]=input.value
+                        return values
+                    },{})
+                    options.onsubmit(formValues)
                 }
                 else{
-                    formElement.submit();
+                    formElement.submit()
                 }
             }
         }
-       options.rules.forEach(function(rule){
+       //lặp qua mỗi rule và xử lý(lắng nghe sự kiện blur, input)
+        options.rules.forEach(function(rule){
+           //lưu lại các rule cho mỗi input
            if(Array.isArray(selectorRules[rule.selector])){
-                selectorRules[rule.selector].push(rule.test);
+                selectorRules[rule.selector].push(rule.test)
            }
            else{
-               selectorRules[rule.selector]=[rule.test];
+               selectorRules[rule.selector]=[rule.test]
            }
-           var inputElement= formElement.querySelector(rule.selector);
+           let inputElement= formElement.querySelector(rule.selector)
            if(inputElement){
-               inputElement.onblur= function(){
+               //xử lý trg hợp blur khỏi input
+               inputElement.onblur= ()=>{
                     Validate(inputElement,rule)                
                }
-                inputElement.oninput= function(){   
+               //xử lý mỗi khi người dùng nhập vào input
+                inputElement.oninput= ()=>{   
                         var errorElement=inputElement.parentElement.querySelector('.form-message')
                         errorElement.innerText=''
                         inputElement.parentElement.classList.remove('invalid') 
                 }    
              }      
-       });
+       })
     }
-  
 }
+//định nghĩa các rule
 Validator.isRequired = function(selector) {
     return {
         selector: selector,
@@ -88,7 +94,7 @@ Validator.isEmail = function (selector) {
         selector: selector,
         test: function (value) {
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(value) ? undefined :  'Trường này phải là email';
+            return regex.test(value) ? undefined :  'Trường này phải là email'
         }
     };
 }
@@ -96,7 +102,7 @@ Validator.minLength = function (selector, min) {
     return {
         selector: selector,
         test: function (value) {
-            return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} kí tự`;
+            return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} kí tự`
         }
     };
 }
@@ -104,7 +110,7 @@ Validator.maxLength = function (selector, max) {
     return {
         selector: selector,
         test: function (value) {
-            return value.length <=max ? undefined : `Vui lòng nhập k quá ${max} kí tự`;
+            return value.length <=max ? undefined : `Vui lòng nhập k quá ${max} kí tự`
         }
     };
 }
